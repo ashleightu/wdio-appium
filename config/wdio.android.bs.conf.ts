@@ -1,11 +1,20 @@
 import { config as sharedConfig } from './wdio.shared.conf';
 import * as path from 'path';
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+//import 'dotenv/config';
 
 export const config = {... sharedConfig};
 
-config.user = process.env.BROWSERSTACK_USER;
-config.key = process.env.BROWSERSTACK_KEY;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+// config.user = process.env.BROWSERSTACK_USERNAME;
+// config.key = process.env.BROWSERSTACK_ACCESS_KEY;
+
+// config.user = 'ashleightu_puXqQJ';
+// config.key = 'TxteeiRpoUi5eKXTMuXx';
 
 config.specs = [
     path.join(process.cwd(), 'test/specs/android/*.ts')
@@ -22,4 +31,8 @@ config.capabilities = [
     }
 ];
 
-config.services = ['browserstack'];
+config.services = [
+    ['browserstack', {
+    browserstackLocal: false
+    }]
+];
