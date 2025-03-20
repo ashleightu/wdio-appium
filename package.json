@@ -9,6 +9,7 @@
     "@wdio/mocha-framework": "^9.11.0",
     "@wdio/spec-reporter": "^9.11.0",
     "@wdio/types": "^9.10.1",
+    "allure-commandline": "^2.33.0",
     "appium": "^2.16.2",
     "appium-uiautomator2-driver": "^4.1.1",
     "appium-xcuitest-driver": "^8.4.0",
@@ -20,6 +21,8 @@
     "wdio": "wdio run ./wdio.conf.ts"
   },
   "dependencies": {
+    "@wdio/allure-reporter": "^9.11.0",
+    "allure": "^3.0.0-beta.10",
     "dotenv": "^16.4.7",
     "webdriver-manager": "^12.1.9"
   },

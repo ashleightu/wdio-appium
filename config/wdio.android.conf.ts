@@ -6,7 +6,7 @@ export const config = {... sharedConfig};
 config.port = 4723;
 
 config.specs = [
-    path.join(process.cwd(), 'test/specs/android/*.ts')
+    path.join(process.cwd(), 'test/specs/android/add-note*.ts')
 ];
 
 config.capabilities = [
@@ -19,3 +19,11 @@ config.capabilities = [
         'appium:autoGrantPermissions': true,
     }
 ];
+
+config.services = [
+    ['appium', {
+        args: {
+            relaxedSecurity: true,
+        }
+    }]
+]

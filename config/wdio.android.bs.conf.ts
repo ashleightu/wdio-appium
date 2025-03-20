@@ -13,8 +13,8 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 // config.user = process.env.BROWSERSTACK_USERNAME;
 // config.key = process.env.BROWSERSTACK_ACCESS_KEY;
 
-// config.user = 'ashleightu_puXqQJ';
-// config.key = 'TxteeiRpoUi5eKXTMuXx';
+config.user = 'ashleightu_puXqQJ';
+config.key = 'TxteeiRpoUi5eKXTMuXx';
 
 config.specs = [
     path.join(process.cwd(), 'test/specs/android/*.ts')

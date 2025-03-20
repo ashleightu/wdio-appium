@@ -9,7 +9,7 @@ class DeleteNoteScreen {
         return $('//*[@text="Delete"]');
     }
 
-    get threeDotsBtn() {
+    get navIcon() {
         return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/icon_nav"]');
     }
 
@@ -37,7 +37,7 @@ class DeleteNoteScreen {
     }
 
     async verifyNoteDeleted() {
-        await this.threeDotsBtn.click();
+        await this.navIcon.click();
         await this.trashCanBtn.click();
         const noteTitle = await this.getTitleText();
         await expect(AddNoteScreen.noteTitle).toHaveText(noteTitle);

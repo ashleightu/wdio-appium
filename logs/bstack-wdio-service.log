@@ -1,22 +1,242 @@
-[90m2025-03-18T06:53:08.124Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service started with id: 9f54117c-bddf-420b-b1a4-96130f5fc45c
-[90m2025-03-18T06:53:08.126Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m username/accesskey not passed
-[90m2025-03-18T06:53:08.126Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m app is not defined in browserstack-service config, skipping ...
-[90m2025-03-18T06:53:08.126Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
-[90m2025-03-18T06:53:08.954Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [Start_Build] Success response: {"success":false,"options":null,"code":null,"errors":[{"message":"Access to BrowserStack denied due to incorrect credentials.","key":"ERROR_INVALID_CREDENTIALS"}],"error_trace_id":"d2e79559-f285-4047-b75e-150cab3b7036"}
-[90m2025-03-18T06:53:08.954Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m OBSERVABILITY Build creation failed null
-[90m2025-03-18T06:53:08.955Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m browserstackLocal is not enabled - skipping...
-[90m2025-03-18T06:53:09.489Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
-[90m2025-03-18T06:53:09.489Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
-[90m2025-03-18T06:53:09.490Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
-[90m2025-03-18T06:53:09.490Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
-[90m2025-03-18T06:53:09.866Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Inside OnComplete hook..
-[90m2025-03-18T06:53:09.866Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending stop launch event
-[90m2025-03-18T06:53:09.867Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [STOP_BUILD] Missing Authentication Token/ Build ID
-[90m2025-03-18T06:53:09.869Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service run ended for id: 9f54117c-bddf-420b-b1a4-96130f5fc45c testhub id: undefined
-[90m2025-03-18T06:53:09.869Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m username/accesskey not passed
-[90m2025-03-18T06:53:09.869Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m If facing any issues, please contact BrowserStack support with the Build Run Id - 9f54117c-bddf-420b-b1a4-96130f5fc45c
-[90m2025-03-18T06:53:10.921Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Upload response: {
-  "status": "failed",
-  "message": "Invalid username or access-key. Visit https://www.browserstack.com/accounts/profile/details for more details."
+[90m2025-03-19T03:27:14.493Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service started with id: 83f9c38a-e75a-4459-8e32-6dadedc1e7f6
+[90m2025-03-19T03:27:14.494Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestAttempted',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: '83f9c38a-e75a-4459-8e32-6dadedc1e7f6',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.11.0',
+    language: 'WebdriverIO',
+    languageVersion: 'v23.9.0',
+    buildName: 'undefined',
+    buildIdentifier: 'undefined',
+    os: 'Darwin',
+    hostname: 'Ashleighs-MacBook-Pro.local',
+    productMap: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha'
+  }
 }
-[90m2025-03-18T06:53:12.071Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Successfully uploaded performance events Bravo
+[90m2025-03-19T03:27:15.263Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Exception in sending funnel data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchWrap (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:254:15)
+    at async fireFunnelRequest (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3068:20)
+    at async fireFunnelTestEvent (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3032:5)
+    at async sendStart (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3040:3)
+    at async BrowserstackLauncherService.onPrepare (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3537:5) {
+  [cause]: Error: self-signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1679:34)
+      at TLSSocket.emit (node:events:507:28)
+      at TLSSocket.emit (node:domain:489:12)
+      at TLSSocket._finishInit (node:_tls_wrap:1078:8)
+      at ssl.onhandshakedone (node:_tls_wrap:864:12) {
+    code: 'SELF_SIGNED_CERT_IN_CHAIN'
+  }
+}
+[90m2025-03-19T03:27:15.263Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m app is not defined in browserstack-service config, skipping ...
+[90m2025-03-19T03:27:15.263Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
+[90m2025-03-19T03:27:16.077Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m TestHub build start failed: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async launchTestSession2 (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:1364:22) {
+  [cause]: Error: self-signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1679:34)
+      at TLSSocket.emit (node:events:507:28)
+      at TLSSocket.emit (node:domain:489:12)
+      at TLSSocket._finishInit (node:_tls_wrap:1078:8)
+      at ssl.onhandshakedone (node:_tls_wrap:864:12) {
+    code: 'SELF_SIGNED_CERT_IN_CHAIN'
+  }
+}
+[90m2025-03-19T03:27:16.078Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m  Build creation failed TypeError: fetch failed
+[90m2025-03-19T03:27:16.079Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m browserstackLocal is not enabled - skipping...
+[90m2025-03-19T03:27:17.862Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2025-03-19T03:27:17.862Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2025-03-19T03:27:17.912Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2025-03-19T03:27:17.912Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2025-03-19T03:27:17.936Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown started
+[90m2025-03-19T03:27:17.936Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m teardown ended
+[90m2025-03-19T03:27:18.311Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Inside OnComplete hook..
+[90m2025-03-19T03:27:18.311Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending stop launch event
+[90m2025-03-19T03:27:18.315Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m BrowserStack service run ended for id: 83f9c38a-e75a-4459-8e32-6dadedc1e7f6 testhub id: undefined
+[90m2025-03-19T03:27:18.316Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-33929.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-33930.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-33954.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-33955.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-4900.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-4901.json
+[90m2025-03-19T03:27:18.317Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Reading worker file worker-data-4902.json
+[90m2025-03-19T03:27:18.321Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: '83f9c38a-e75a-4459-8e32-6dadedc1e7f6',
+    testhub_uuid: undefined,
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.11.0',
+    language: 'WebdriverIO',
+    languageVersion: 'v23.9.0',
+    buildName: 'undefined',
+    buildIdentifier: 'undefined',
+    os: 'Darwin',
+    hostname: 'Ashleighs-MacBook-Pro.local',
+    productMap: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: true,
+        manuallySet: false,
+        buildHashedId: undefined,
+        events: {
+          buildEvents: {
+            started: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'fetch failed'
+            },
+            finished: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'Build is not completed yet'
+            }
+          },
+          testEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          hookEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          logEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+          cbtSessionEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+        }
+      }
+    }
+  }
+}
+[90m2025-03-19T03:27:18.705Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Exception in sending funnel data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchWrap (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:254:15)
+    at async fireFunnelRequest (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3068:20)
+    at async fireFunnelTestEvent (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3032:5)
+    at async sendFinish (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3043:3)
+    at async BrowserstackLauncherService.onComplete (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3685:5) {
+  [cause]: Error: self-signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1679:34)
+      at TLSSocket.emit (node:events:507:28)
+      at TLSSocket.emit (node:domain:489:12)
+      at TLSSocket._finishInit (node:_tls_wrap:1078:8)
+      at ssl.onhandshakedone (node:_tls_wrap:864:12) {
+    code: 'SELF_SIGNED_CERT_IN_CHAIN'
+  }
+}
+[90m2025-03-19T03:27:18.705Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m If facing any issues, please contact BrowserStack support with the Build Run Id - 83f9c38a-e75a-4459-8e32-6dadedc1e7f6
+[90m2025-03-19T03:27:20.258Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Error in firing request https://upload-observability.browserstack.com/client-logs/upload: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async nodeRequest (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:1189:22)
+    at async uploadLogs (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:2171:22)
+    at async BrowserstackLauncherService._uploadServiceLogs (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3819:22)
+    at async BrowserstackLauncherService.onComplete (/Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/index.js:3687:7) {
+  [cause]: Error: self-signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1679:34)
+      at TLSSocket.emit (node:events:507:28)
+      at TLSSocket.emit (node:domain:489:12)
+      at TLSSocket._finishInit (node:_tls_wrap:1078:8)
+      at ssl.onhandshakedone (node:_tls_wrap:864:12) {
+    code: 'SELF_SIGNED_CERT_IN_CHAIN'
+  }
+}
+[90m2025-03-19T03:27:20.390Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending SDK event with data {
+  userName: '[REDACTED]',
+  accessKey: '[REDACTED]',
+  event_type: 'SDKTestSuccessful',
+  detectedFramework: 'WebdriverIO-mocha',
+  event_properties: {
+    sdkRunId: '83f9c38a-e75a-4459-8e32-6dadedc1e7f6',
+    language_framework: 'WebdriverIO_mocha',
+    referrer: 'WebdriverIO-mocha/9.11.0',
+    language: 'WebdriverIO',
+    languageVersion: 'v23.9.0',
+    buildName: 'undefined',
+    buildIdentifier: 'undefined',
+    os: 'Darwin',
+    hostname: 'Ashleighs-MacBook-Pro.local',
+    productMap: {
+      observability: true,
+      accessibility: false,
+      percy: false,
+      automate: true,
+      app_automate: false
+    },
+    product: [ 'observability', 'automate' ],
+    framework: 'mocha',
+    productUsage: {
+      testObservability: {
+        enabled: true,
+        manuallySet: false,
+        events: {
+          buildEvents: {
+            started: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'fetch failed'
+            },
+            finished: {
+              isTriggered: true,
+              status: 'failed',
+              error: 'Build is not completed yet'
+            }
+          },
+          testEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          hookEvents: {
+            started: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+            finished: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+          },
+          logEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 },
+          cbtSessionEvents: { triggeredCount: 0, sentCount: 0, failedCount: 0 }
+        }
+      }
+    }
+  }
+}
+[90m2025-03-19T03:27:20.809Z[39m [31mERROR[39m [97m@wdio/browserstack-service[39m Error in sending funnel data: TypeError: fetch failed
+[90m2025-03-19T03:27:21.809Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Failed to upload performance events TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async fetchWrap (file:///Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/cleanup.js:236:15)
+    at async _PerformanceTester.uploadEventsData (file:///Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/cleanup.js:477:22)
+    at async _BStackCleanup.startCleanup (file:///Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/cleanup.js:2068:9)
+    at async file:///Users/ashleigh/wdio-appium/node_modules/@wdio/browserstack-service/build/cleanup.js:2133:1 {
+  [cause]: Error: self-signed certificate in certificate chain
+      at TLSSocket.onConnectSecure (node:_tls_wrap:1679:34)
+      at TLSSocket.emit (node:events:507:28)
+      at TLSSocket._finishInit (node:_tls_wrap:1078:8)
+      at ssl.onhandshakedone (node:_tls_wrap:864:12) {
+    code: 'SELF_SIGNED_CERT_IN_CHAIN'
+  }
+}
